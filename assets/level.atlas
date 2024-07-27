@@ -1,0 +1,104 @@
+images {
+  image: "/assets/images/level/koridor/basick_rm.png"
+}
+images {
+  image: "/assets/images/level/koridor/darkestbasick_rm.png"
+}
+images {
+  image: "/assets/images/level/koridor/litledarkbasick_rm.png"
+}
+images {
+  image: "/assets/images/level/doors/basickdoor.png"
+}
+images {
+  image: "/assets/images/level/doors/brokendoor.png"
+}
+images {
+  image: "/assets/images/level/doors/door2.png"
+}
+images {
+  image: "/assets/images/level/doors/door3.png"
+}
+images {
+  image: "/assets/images/level/koridor/playercoridorbasic.png"
+}
+animations {
+  id: "idle"
+  images {
+    image: "/assets/images/level/startroom/frame_00_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_01_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_02_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_03_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_04_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_05_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_06_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_07_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_08_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_09_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_10_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_11_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_12_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/level/startroom/frame_13_delay-0.15s.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 5
+}
+animations {
+  id: "door4"
+  images {
+    image: "/assets/images/level/doors/door4/frame_0_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_1_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_2_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_3_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_4_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_5_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_6_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_7_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/doors/door4/frame_8_delay-0.1s.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
+extrude_borders: 2

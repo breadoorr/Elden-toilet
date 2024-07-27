@@ -1,100 +1,118 @@
-images {
-  image: "/assets/images/player/alienPink_front.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
-  image: "/assets/images/player/alienPink_hit.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
 animations {
   id: "walk"
   images {
-    image: "/assets/images/player/alienPink_walk1.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/images/player/walk/frame_0_delay-0.2s.png"
   }
   images {
-    image: "/assets/images/player/alienPink_walk2.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/images/player/walk/frame_1_delay-0.2s.png"
+  }
+  images {
+    image: "/assets/images/player/walk/frame_2_delay-0.2s.png"
+  }
+  images {
+    image: "/assets/images/player/walk/frame_3_delay-0.2s.png"
+  }
+  images {
+    image: "/assets/images/player/walk/frame_4_delay-0.2s.png"
+  }
+  images {
+    image: "/assets/images/player/walk/frame_5_delay-0.2s.png"
+  }
+  images {
+    image: "/assets/images/player/walk/frame_6_delay-0.2s.png"
+  }
+  images {
+    image: "/assets/images/player/walk/frame_7_delay-0.2s.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
-  fps: 10
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "jump"
-  images {
-    image: "/assets/images/player/alienPink_jump.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_NONE
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "climb"
-  images {
-    image: "/assets/images/player/alienPink_climb1.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/images/player/alienPink_climb2.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 10
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "swim"
-  images {
-    image: "/assets/images/player/alienPink_swim1.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/images/player/alienPink_swim2.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 10
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "duck"
-  images {
-    image: "/assets/images/player/alienPink_duck.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
+  fps: 13
 }
 animations {
   id: "idle"
   images {
-    image: "/assets/images/player/alienPink_stand.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/images/player/idle/frame_0_delay-0.3s.png"
   }
-  playback: PLAYBACK_NONE
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
+  images {
+    image: "/assets/images/player/idle/frame_1_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/idle/frame_2_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/idle/frame_3_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/idle/frame_4_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/idle/frame_5_delay-0.3s.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
 }
 animations {
   id: "fall"
   images {
-    image: "/assets/images/player/alienPink_swim2.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+    image: "/assets/images/player/fall/frame_00_delay-0.1s.png"
   }
-  playback: PLAYBACK_ONCE_FORWARD
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
+  images {
+    image: "/assets/images/player/fall/frame_01_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_02_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_03_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_04_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_05_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_06_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_07_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_08_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_09_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_10_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_11_delay-0.3s.png"
+  }
+  images {
+    image: "/assets/images/player/fall/frame_12_delay-1s.png"
+  }
+  fps: 13
 }
-margin: 0
+animations {
+  id: "attack"
+  images {
+    image: "/assets/images/player/attack/frame_0_delay-1s.png"
+  }
+  images {
+    image: "/assets/images/player/attack/frame_1_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/attack/frame_3_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/player/attack/frame_4_delay-0.15s.png"
+  }
+  images {
+    image: "/assets/images/player/attack/frame_5_delay-0.07s.png"
+  }
+  images {
+    image: "/assets/images/player/attack/frame_6_delay-0.1s.png"
+  }
+  fps: 12
+}
 extrude_borders: 2
-inner_padding: 0

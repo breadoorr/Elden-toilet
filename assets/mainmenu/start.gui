@@ -1,0 +1,97 @@
+script: "/assets/mainmenu/point_over.gui_script"
+fonts {
+  name: "startfont"
+  font: "/assets/startfont.font"
+}
+textures {
+  name: "level"
+  texture: "/assets/level.atlas"
+}
+nodes {
+  position {
+    x: 640.0
+    y: 320.0
+  }
+  size {
+    x: 1280.0
+    y: 640.0
+  }
+  type: TYPE_BOX
+  texture: "level/idle"
+  id: "box"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -9.0
+    y: 59.0
+  }
+  scale {
+    x: 2.199741
+    y: 1.411194
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.502
+    y: 0.502
+    z: 0.502
+  }
+  type: TYPE_BOX
+  id: "start"
+  parent: "box"
+  inherit_alpha: true
+  alpha: 0.0
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  scale {
+    x: 0.989095
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "START\n"
+  ""
+  font: "startfont"
+  id: "text"
+  parent: "start"
+}
+nodes {
+  position {
+    x: -1.804126
+    y: -123.54099
+  }
+  scale {
+    x: 1.178501
+    y: 1.159493
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "quit"
+  parent: "box"
+  inherit_alpha: true
+  alpha: 0.0
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Quit\n"
+  ""
+  font: "startfont"
+  id: "text1"
+  parent: "quit"
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

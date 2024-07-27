@@ -2,17 +2,18 @@
 title = micro_jam_019
 
 [bootstrap]
-main_collection = /game/game.collectionc
+main_collection = /game/load.collectionc
 
 [input]
 game_binding = /input/game.input_bindingc
 use_accelerometer = 0
 
 [display]
-width = 960
+width = 1280
 height = 640
 vsync = 0
 update_frequency = 60
+high_dpi = 1
 
 [ios]
 app_icon_120x120 = /assets/app_icons/icon_120.png
@@ -42,10 +43,16 @@ input_method = HiddenInputField
 shared_state = 1
 
 [physics]
-gravity_y = -1000.0
-scale = 0.01
 use_fixed_timestep = 1
 
 [graphics]
 max_debug_vertices = 50000
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+
+[sprite]
+subpixels = 1
+
+[label]
+subpixels = 1
 

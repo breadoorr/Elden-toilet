@@ -1,0 +1,22 @@
+name: "load"
+scale_along_z: 0
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"load\"\n"
+  "  component: \"/game/load.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"mainmenu\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/game/mainmenu.collection\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"game\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/game/game.collection\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
