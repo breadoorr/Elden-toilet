@@ -1,0 +1,52 @@
+-- add logic for rendering koridor collection, mb add functions to exit
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("#door", "enable")
+	print("enabled")
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function fixed_update(self, dt)
+	-- This function is called if 'Fixed Update Frequency' is enabled in the Engine section of game.project
+	-- Can be coupled with fixed updates of the physics simulation if 'Use Fixed Timestep' is enabled in
+	-- Physics section of game.project
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then
+		if message.enter then
+			print("trigger")
+			-- Send a message to the main collection when the player enters the trigger
+			msg.post("/go#game", "trigger_entered", { trigger_id = go.get_id() })
+		elseif message.exit then
+			print("exit")
+			-- Send a message to the main collection when the player exits the trigger
+			msg.post("/go#game", "trigger_exited", { trigger_id = go.get_id() })
+		end
+	end
+end
+
+function on_input(self, action_id, action)
+
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Learn more: https://defold.com/manuals/hot-reload/
+	-- Remove this function if not needed
+end

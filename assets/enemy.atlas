@@ -1,0 +1,86 @@
+animations {
+  id: "walk"
+  images {
+    image: "/assets/images/enemy/walk/frame_0_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_1_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_2_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_3_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_4_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_5_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_6_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_7_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/walk/frame_8_delay-0.1s.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 13
+}
+animations {
+  id: "attack"
+  images {
+    image: "/assets/images/enemy/attack/frame_0_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/attack/frame_1_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/attack/frame_2_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/attack/frame_3_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/attack/frame_4_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/attack/frame_5_delay-0.1s.png"
+  }
+  fps: 7
+}
+animations {
+  id: "fall"
+  images {
+    image: "/assets/images/enemy/fall/frame_0_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_1_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_2_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_3_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_4_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_5_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_6_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_7_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/enemy/fall/frame_8_delay-0.1s.png"
+  }
+  fps: 13
+}
+extrude_borders: 2

@@ -1,0 +1,50 @@
+components {
+  id: "enemy"
+  component: "/game/components/enemy.script"
+}
+embedded_components {
+  id: "collision"
+  type: "collisionobject"
+  data: "type: COLLISION_OBJECT_TYPE_TRIGGER\n"
+  "mass: 0.0\n"
+  "friction: 0.1\n"
+  "restitution: 0.5\n"
+  "group: \"default\"\n"
+  "mask: \"default\"\n"
+  "embedded_collision_shape {\n"
+  "  shapes {\n"
+  "    shape_type: TYPE_BOX\n"
+  "    position {\n"
+  "      x: 3.0\n"
+  "      y: -15.0\n"
+  "    }\n"
+  "    rotation {\n"
+  "    }\n"
+  "    index: 0\n"
+  "    count: 3\n"
+  "  }\n"
+  "  data: 25.0\n"
+  "  data: 35.0\n"
+  "  data: 10.0\n"
+  "}\n"
+  ""
+}
+embedded_components {
+  id: "sprite"
+  type: "sprite"
+  data: "default_animation: \"walk\"\n"
+  "material: \"/builtins/materials/sprite.material\"\n"
+  "size {\n"
+  "  x: 100.0\n"
+  "  y: 100.0\n"
+  "}\n"
+  "size_mode: SIZE_MODE_MANUAL\n"
+  "textures {\n"
+  "  sampler: \"texture_sampler\"\n"
+  "  texture: \"/assets/enemy.atlas\"\n"
+  "}\n"
+  ""
+  position {
+    z: 1.0
+  }
+}

@@ -1,0 +1,23 @@
+size {
+  x: 128.0
+  y: 32.0
+}
+color {
+  x: 0.949
+  y: 0.949
+  z: 0.949
+}
+outline {
+  x: 0.502
+  y: 0.502
+  z: 0.502
+}
+shadow {
+  x: 0.4
+  y: 0.4
+  z: 0.4
+}
+text: "E\n"
+  ""
+font: "/assets/fonts/startfont.font"
+material: "/builtins/fonts/label-df.material"

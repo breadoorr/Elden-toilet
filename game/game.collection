@@ -1,28 +1,67 @@
 name: "game"
-collection_instances {
-  id: "level"
-  collection: "/game/level.collection"
-  position {
-    x: 640.0
-    y: 320.0
-  }
-  scale3 {
-    x: 10.0
-    y: 10.0
-    z: 10.0
-  }
-}
-collection_instances {
-  id: "player"
-  collection: "/game/player.collection"
-  position {
-    x: 351.0
-    y: 239.0
-    z: 1.0
-  }
-  scale3 {
-    x: 10.0
-    y: 10.0
-  }
-}
 scale_along_z: 0
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"game\"\n"
+  "  component: \"/game/game.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"startfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/startroom.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"koridorfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/koridor.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "dynamic_prototype: true\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"doorfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/door.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"guifactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/gui.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"playerfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/player.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"enemyfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/enemy.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"finalfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/final_koridor.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/game/components/f.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    z: -100.0
+  }
+}

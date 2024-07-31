@@ -9,7 +9,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"mainmenu\"\n"
   "  type: \"collectionproxy\"\n"
-  "  data: \"collection: \\\"/game/mainmenu.collection\\\"\\n"
+  "  data: \"collection: \\\"/game/components/mainmenu.collection\\\"\\n"
   "\"\n"
   "}\n"
   "embedded_components {\n"

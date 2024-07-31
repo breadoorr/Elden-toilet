@@ -22,6 +22,9 @@ images {
 images {
   image: "/assets/images/level/koridor/playercoridorbasic.png"
 }
+images {
+  image: "/assets/images/level/koridor/plantsroom.png"
+}
 animations {
   id: "idle"
   images {
@@ -100,5 +103,84 @@ animations {
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 8
+}
+animations {
+  id: "final"
+  images {
+    image: "/assets/images/final/frame_00_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_01_delay-0.4s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_02_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_03_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_04_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_05_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_06_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_07_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_08_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_09_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_10_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_11_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_12_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_13_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_14_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_15_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/final/frame_16_delay-0.4s.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 10
+}
+animations {
+  id: "eyeroom"
+  images {
+    image: "/assets/images/level/koridor/eyeroom/frame_0_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/koridor/eyeroom/frame_1_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/koridor/eyeroom/frame_2_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/koridor/eyeroom/frame_3_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/koridor/eyeroom/frame_4_delay-0.1s.png"
+  }
+  images {
+    image: "/assets/images/level/koridor/eyeroom/frame_5_delay-0.1s.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
 }
 extrude_borders: 2

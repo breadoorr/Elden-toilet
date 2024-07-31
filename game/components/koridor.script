@@ -1,0 +1,72 @@
+-- add logic for rendering doors v, send messages for loading according rooms to the main, add trigger colliders v
+-- render doors(320/400) v
+kor_sprites = {
+	"basick_rm",
+	"darkestbasick_rm",
+	"litledarkbasick_rm",
+	"plantsroom",
+	"eyeroom"
+}
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("#wall", "enable")
+	print("wall")
+	math.randomseed(os.time() + tonumber(tostring(os.clock()):reverse():sub(1,6)))
+	local i = math.floor(math.random() * 5) + 1
+
+	sprite.play_flipbook("#sprite", kor_sprites[i])
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+
+end
+
+function fixed_update(self, dt)
+	-- This function is called if 'Fixed Update Frequency' is enabled in the Engine section of game.project
+	-- Can be coupled with fixed updates of the physics simulation if 'Use Fixed Timestep' is enabled in
+	-- Physics section of game.project
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then
+		if message.enter then
+			print("trigger")
+			-- Send a message to the main collection when the player enters the trigger
+			msg.post("/go#game", "trigger_entered", { trigger_id = go.get_id() })
+		elseif message.exit then
+			-- Send a message to the main collection when the player exits the trigger
+			msg.post("/go#game", "trigger_exited", { trigger_id = go.get_id() })
+		end
+	end
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here. The game object this script is attached to
+	-- must have acquired input focus:
+	--
+	--    msg.post(".", "acquire_input_focus")
+	--
+	-- All mapped input bindings will be received. Mouse and touch input will
+	-- be received regardless of where on the screen it happened.
+	-- Learn more: https://defold.com/manuals/input/
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Learn more: https://defold.com/manuals/hot-reload/
+	-- Remove this function if not needed
+end

@@ -1,0 +1,59 @@
+script: ""
+fonts {
+  name: "startfont"
+  font: "/assets/fonts/startfont.font"
+}
+nodes {
+  position {
+    y: -92.0
+  }
+  size {
+    x: 50.0
+    y: 50.0
+  }
+  type: TYPE_BOX
+  id: "interaction"
+  inherit_alpha: true
+  alpha: 0.47
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "E\n"
+  ""
+  font: "startfont"
+  id: "text"
+  parent: "interaction"
+}
+nodes {
+  scale {
+    x: 0.5
+    y: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "start"
+  inherit_alpha: true
+  alpha: 0.47
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "toilet..."
+  font: "startfont"
+  id: "text1"
+  parent: "start"
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
