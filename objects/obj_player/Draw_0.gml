@@ -22,11 +22,9 @@ draw_self()
 			if(image_index >= 7){
 				ATK = false
 			}
+	}else{
+		ATK = false
 	}
-
-draw_line(x,y,x+16,y)
-
-	
 	
 	if(dir == 1){
 		image_xscale = 1

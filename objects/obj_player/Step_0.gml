@@ -1,5 +1,5 @@
 // что какое событие делает позже раскажу
-if(mouse_check_button(mb_left) && ATK == false){
+if(mouse_check_button(mb_left) && ATK == false && global.axe == 1){
 	ATK = true
 	image_index = 0
 }
